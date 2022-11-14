@@ -9,6 +9,9 @@ kubectl create secret docker-registry regcred --docker-server=<your-registry-ser
 ```sh
 kubectl create secret docker-registry regcred --docker-server=https://index.docker.io/v1/ --docker-username=partha00011 --docker-password=<your-password> --docker-email=<your-email>
 ```
+```sh
+kubectl get secret <secret-name> --output=yaml > secret.yaml
+```
 ### Using the Executor: Various command-line flags
     Usage:
       executor [flags]
